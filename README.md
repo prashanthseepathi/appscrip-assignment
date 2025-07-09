@@ -15,6 +15,16 @@ EKS Cluster with version 1.32
 Fargate profile for namespace default
 EKS add-ons: kube-proxy, coredns, vpc-cni
 
+Initialize and Apply Terraform
+Navigate to your Terraform project directory and run the following:
+
+terraform init         # Initialize the working directory
+terraform validate     # Validate Terraform configuration
+terraform plan         # Review changes before applying
+terraform apply        # Apply infrastructure changes
+Once Terraform apply completes successfully, you’ll see the EKS cluster name in the output. Use that name to configure kubectl on your test server and begin interacting with the cluster.
+
+
 
 
 ✅ After creating the infrastructure, configure kubectl:
