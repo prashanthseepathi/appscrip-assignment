@@ -101,6 +101,8 @@ manifests/
 📦 Step 7: ArgoCD Application YAML
 From the ArgoCD UI → Create App → Edit as YAML, paste the following:
 
+its located in argocd folder in our repo as nginx-app-argocd.yaml, please check
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
